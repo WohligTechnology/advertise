@@ -177,7 +177,7 @@
 .bg-1 {
     position: absolute;
     // right: -200px;
-    right: 0px;
+      right: 5px;
     z-index: 9;
     width: 116%;
 }
@@ -191,11 +191,13 @@
 .bg-3 {
     position: absolute;
     // right: 206px;
-    left: -150px;
+      left: -146px;
 }
 .bg-4 {
     position: absolute;
-    right: 195px;
+    right: 194px;
+    z-index: 9;
+    opacity: 0;
 }
 .bg-5 {
     position: absolute;
@@ -204,7 +206,7 @@
 }
 .curve {
     position: absolute;
-      left: -75px;
+        left: -100px;
     // opacity: 0;
 }
 //bgp1
@@ -223,6 +225,9 @@
 .bg-2 {
      @include animation(opacity 600ms ease-in-out 1.2s forwards);
 }
+.bg-4 {
+     @include animation(opacity 50ms ease-in-out 1.4s forwards);
+}
 // bg3
 @include keyframes (an2) {
     0% {
@@ -233,7 +238,7 @@
     }
 }
 .an2 {
-    @include animation(an2 0.7s ease-in-out 0.9s forwards);
+    @include animation(an2 0.9s ease-in-out 0.6s forwards);
 }
 // .curve {
 //      @include animation(opacity 100ms ease-in-out 0.9s forwards);
