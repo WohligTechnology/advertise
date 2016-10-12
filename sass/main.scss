@@ -28,6 +28,13 @@ position: absolute;
 .cont-text1 {
     margin-top: -1px;
 }
+.big-banner{
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background: #ddd;
+  border: 1px solid #ddd;
+}
 .small-fixed{
     width: 300px;
     height: 250px;
@@ -168,4 +175,27 @@ top: -60px;
    100% {
   opacity: 0
    }
+}
+.first-frame{
+  background: #fff;
+top: 0;
+height: 100%;
+width: 100%;
+}
+.bg-1{
+  position: absolute;
+  right:-200px;
+}
+.bg-2{
+  position: absolute;
+  right: 142px;
+  bottom: 8px;
+}
+.bg-3{
+  position: absolute;
+  right: 206px;
+}
+.bg-4{
+  position: absolute;
+right: 195px;
 }

@@ -27,6 +27,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
+.controller('HorizontalCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("horizontal"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Horizontal"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
 
 .controller('headerctrl', function($scope, TemplateService) {
     $scope.template = TemplateService;
