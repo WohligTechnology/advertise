@@ -237,10 +237,10 @@
      @include animation(opacity 50ms ease-in-out 1.4s forwards);
 }
 .bg-6 {
-      @include animation(opacity 2s ease-in-out 2.8s forwards);
+      @include animation(opacity 2s ease-in-out 3.5s forwards);
 }
 .bg-5 {
-      @include animation(opacity-text 2s ease-in-out 1s forwards);
+      @include animation(opacity-text 2s ease-in-out 1.9s forwards);
 }
 // bg3
 @include keyframes (an2) {
