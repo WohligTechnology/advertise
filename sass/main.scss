@@ -207,7 +207,7 @@
 .second-frame {
     // background: #fff;
     top: 0;
-    height: 100%;
+    height: 92px;
     width: 100%;
 }
 
@@ -237,12 +237,17 @@
     left: -146px;
 }
 
+.first-frame {
+    position: relative;
+}
+
 .bg-4 {
     position: absolute;
     right: 204px;
     top: 0;
     z-index: 9;
     opacity: 0;
+    height: 92px;
 }
 
 .bg-5 {
@@ -281,11 +286,24 @@
 
 //bg2 animation done
 .bg-2 {
-    @include animation(opacity 600ms ease-in-out 1.2s forwards);
+    height: 40px;
+    @include animation(opacity 50ms ease-in-out 1.2s forwards);
+}
+
+@include keyframes (slide-trans) {
+    0% {
+        transform: translateX(-525px);
+        opacity: 1;
+    }
+    100% {
+        @include transform(translateX(0px));
+        opacity: 1;
+    }
 }
 
 .bg-4 {
-    @include animation(opacity 50ms ease-in-out 1.2s forwards);
+    right: 202px;
+    @include animation(slide-trans 1.4s ease-in-out 0.2s forwards);
 }
 
 .bg-6 {
@@ -311,7 +329,7 @@
 }
 
 .first-frame {
-    @include animation(first-ani 600ms ease-in 5.5s forwards);
+    @include animation(first-ani 600ms ease-in 5.7s forwards);
 }
 
 .second-frame {
