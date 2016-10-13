@@ -351,11 +351,12 @@
     // .s1 {
     //     @include animation(opacity 600ms ease-in forwards);
     // }
-    // .s5 {
-    //     @include animation(opacity 600ms ease-in 6s forwards);
-    // }
+    .s5 {
+        @include animation(opacity 600ms ease-in 0.5s forwards);
+    }
+    
     .s4 {
-        @include animation(opacity 600ms ease-in 2s forwards);
+        @include animation(opacity 600ms ease-in 1.5s forwards);
     }
     
     .s6 {
@@ -367,7 +368,7 @@
     }
     
     .s2 {
-        @include animation(opacity 600ms ease-in 1s forwards);
+        @include animation(opacity 600ms ease-in 0.8s forwards);
     }
     
     .an3 {
@@ -375,7 +376,7 @@
     }
     
     .an4 {
-        @include animation(an4 0.9s ease-in 5.5s forwards);
+        @include animation(an4 0.9s ease-in 0.2s forwards);
     }
     
     // animation: name duration timing-function delay iteration-count direction fill-mode play-state;
