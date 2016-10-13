@@ -204,6 +204,13 @@
     position: absolute;
     top: 28px;
     left: 22px;
+    opacity: 0;
+}
+.bg-6 {
+  position: absolute;
+  top: 28px;
+  left: 22px;
+  opacity: 0;
 }
 .curve {
     position: absolute;
@@ -228,6 +235,12 @@
 }
 .bg-4 {
      @include animation(opacity 50ms ease-in-out 1.4s forwards);
+}
+.bg-6 {
+      @include animation(opacity 2s ease-in-out 2.8s forwards);
+}
+.bg-5 {
+      @include animation(opacity-text 2s ease-in-out 1s forwards);
 }
 // bg3
 @include keyframes (an2) {
