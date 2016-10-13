@@ -1,417 +1,406 @@
-    @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-    /* Start writing sass here */
-    
-    .rl {
-        position: relative;
-    }
-    
-    .ab {
-        position: absolute;
-    }
-    
-    .full-height {
-        height: 100%;
-    }
-    
-    .full-img {
-        width: 100%;
-        display: block;
-    }
-    
-    .cont-text {
-        top: -1px;
-        height: 250px;
-        left: 0;
-        background: #fff;
-    }
-    
-    .cont-inside {
-        background: #fff;
-        width: 300px;
-        margin-top: 0;
-    }
-    
-    .cont-text1 {
-        margin-top: -1px;
-    }
-    
-    .big-banner {
-        width: 728px;
-        height: 90px;
-        overflow: hidden;
-        // background: #ddd;
-        border: 1px solid #ddd;
-    }
-    
-    .small-fixed {
-        width: 300px;
-        height: 250px;
-        overflow: hidden;
-        background: #ddd;
-        position: relative;
-        border: 1px solid #ddd;
-        .logo,
-        .logo2 {
-            bottom: 12px;
-            right: 15px;
-            width: 28px;
-            opacity: 0;
-        }
-        .bg-text {
-            top: -60px;
-            height: 250px;
-            width: 100%;
-        }
-        .t1,
-        .t2 {
-            top: 25px;
-            left: 20px;
-            width: 95px;
-            opacity: 0;
-            // @include transform (translateX(-150%));
-        }
-        .t3 {
-            top: 20px;
-            width: 230px;
-            left: 20px;
-            opacity: 0;
-        }
-        .t3_btn {
-            top: 100px;
-            width: 110px;
-            left: 20px;
-            opacity: 0;
-        }
-        .t3_2 {
-            bottom: 7px;
-            left: 20px;
-            width: 186px;
-            opacity: 0;
-        }
-    }
-    
-    //animation scss
-    .cont-text {
-        @include animation(cont-animation 1.2s ease-in-out 0s forwards);
-    }
-    
-    .cloud {
-        @include animation(cloud 1s ease-in-out 0s forwards);
-    }
-    
-    .t1 {
-        @include animation(opacity-text 2s ease-in-out 1s forwards);
-    }
-    
-    .t2 {
-        @include animation(opacity 2s ease-in-out 2.8s forwards);
-    }
-    
-    .logo {
-        @include animation(opacity 500ms ease-in-out 1.2s forwards);
-    }
-    
-    .cont-inside {
-        @include animation(cont-inside 1.5s ease-in-out 4.2s forwards);
-    }
-    
-    .t3 {
-        @include animation(opacity 2s ease-in-out 5.4s forwards);
-    }
-    
-    .t3_btn {
-        @include animation(opacity 800ms ease-in-out 5.5s forwards);
-    }
-    
-    .t3_2 {
-        @include animation(opacity 2s ease-in-out 6s forwards);
-    }
-    
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+/* Start writing sass here */
+
+.rl {
+    position: relative;
+}
+
+.ab {
+    position: absolute;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-img {
+    width: 100%;
+    display: block;
+}
+
+.cont-text {
+    top: -1px;
+    height: 250px;
+    left: 0;
+    background: #fff;
+}
+
+.cont-inside {
+    background: #fff;
+    width: 300px;
+    margin-top: 0;
+}
+
+.cont-text1 {
+    margin-top: -1px;
+}
+
+.big-banner {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    // background: #ddd;
+    border: 1px solid #ddd;
+}
+
+.small-fixed {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background: #ddd;
+    position: relative;
+    border: 1px solid #ddd;
+    .logo,
     .logo2 {
-        @include animation(opacity 800ms ease-in-out 6.2s forwards);
+        bottom: 12px;
+        right: 15px;
+        width: 28px;
+        opacity: 0;
     }
-    
-    @include keyframes (cloud) {
-        0% {
-            @include transform(translateY(-100%));
-        }
-        100% {
-            @include transform(translateY(0%));
-        }
-    }
-    
-    @include keyframes (cont-animation) {
-        0% {
-            @include transform(translateY(0px));
-        }
-        100% {
-            @include transform(translateY(100%));
-        }
-    }
-    
-    @include keyframes (bg-text2) {
-        0% {
-            @include transform(translateY(0px));
-        }
-        100% {
-            @include transform(translateY(-250px));
-        }
-    }
-    
-    @include keyframes (cont-inside) {
-        0% {
-            @include transform(translateY(0px));
-        }
-        100% {
-            @include transform(translateY(-100%));
-        }
-    }
-    
-    @include keyframes (opacity) {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @include keyframes (opacity-text) {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.8;
-        }
-        60% {
-            opacity: 1;
-        }
-        80% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    
-    .first-frame,
-    .second-frame {
-        // background: #fff;
-        top: 0;
-        height: 100%;
+    .bg-text {
+        top: -60px;
+        height: 250px;
         width: 100%;
     }
-    .second-frame{
+    .t1,
+    .t2 {
+        top: 25px;
+        left: 20px;
+        width: 95px;
+        opacity: 0;
+        // @include transform (translateX(-150%));
+    }
+    .t3 {
+        top: 20px;
+        width: 230px;
+        left: 20px;
         opacity: 0;
     }
-    .bg-1 {
-        position: absolute;
-        // right: -200px;
-        right: 0px;
-        z-index: 9;
-        width: 118%;
-    }
-    
-    .bg-2 {
-        position: absolute;
-        right: 142px;
-        bottom: 8px;
-        opacity: 0;
-        z-index: 9;
-    }
-    
-    .bg-3 {
-        position: absolute;
-        // right: 206px;
-        left: -146px;
-    }
-    
-    .bg-4 {
-        position: absolute;
-        right: 204px;
-        z-index: 9;
+    .t3_btn {
+        top: 100px;
+        width: 110px;
+        left: 20px;
         opacity: 0;
     }
-    
-    .bg-5 {
-        position: absolute;
-        top: 28px;
-        left: 22px;
+    .t3_2 {
+        bottom: 7px;
+        left: 20px;
+        width: 186px;
         opacity: 0;
     }
-    
-    .bg-6 {
-        position: absolute;
-        top: 28px;
-        left: 22px;
-        opacity: 0;
-    }
-    
-    .curve {
-        position: absolute;
-        left: -100px;
-        // opacity: 0;
-    }
-    
-    //bgp1
-    @include keyframes (an1) {
-        0% {
-            @include transform(translateX(0px));
-        }
-        100% {
-            @include transform(translateX(550px));
-        }
-    }
-    
-    .an1 {
-        @include animation(an1 1.4s ease-in-out 0.2s forwards);
-    }
-    
-    //bg2 animation done
-    .bg-2 {
-        @include animation(opacity 600ms ease-in-out 1.2s forwards);
-    }
-    
-    .bg-4 {
-        @include animation(opacity 50ms ease-in-out 1.4s forwards);
-    }
-    
-    .bg-6 {
-        @include animation(opacity 2s ease-in-out 3.5s forwards);
-    }
-    
-    .bg-5 {
-        @include animation(opacity-text 2s ease-in-out 1.9s forwards);
-    }
-    
-    // bg3
-    @include keyframes (an2) {
-        0% {
-            @include transform(translateX(0px));
-        }
-        100% {
-            @include transform(translateX(300px));
-        }
-    }
-    
-    .an2 {
-        @include animation(an2 0.9s ease-in-out 0.6s forwards);
-    }
-           .first-frame{
- @include animation(first-ani 600ms ease-in 5.5s forwards);
-    }
-               .second-frame{
- @include animation(opacity 600ms ease-in 5.8s forwards);
-    }
-           @include keyframes (first-ani) {
-        0% {
-            @include transform(translateX(0px));
-        }
-        100% {
-            @include transform(translateX(100%));
-        }
-    }
-    // .curve {
-    //      @include animation(opacity 100ms ease-in-out 0.9s forwards);
-    // }
-    .s1 {
-        position: absolute;
-        right: 0px;
-        z-index: 9;
-        opacity: 0;
-    }
-    
-    .s2 {
-        position: absolute;
-        right: 217px;
-        z-index: 99;
-        opacity: 0;
-    }
-    
-    .s3 {
-        position: absolute;
-        right: -68px;
-        z-index: 99;
-        width: 300px;
-        bottom: 10px;
-        opacity: 0;
-    }
-    
-    .s4 {
-        position: absolute;
-        right: 245px;
-        z-index: 99;
-        width: 30%;
-        top: 30px;
-        opacity: 0;
-    }
-    
-    .s5 {
-        position: absolute;
-        left: -55px;
-        z-index: 99;
-        width: 450px;
-        top: 15px;
-        // opacity: 0;
-    }
-    
-    .s6 {
-        position: absolute;
-        right: 185px;
-        bottom: 10px;
-        z-index: 99;
-        opacity: 0;
-    }
+}
 
-    // .s1 {
-    //     @include animation(opacity 600ms ease-in forwards);
-    // }
-    .s5 {
-        @include animation(opacity 600ms ease-in 6.1s forwards);
-    }
-    
-    .s4 {
-        @include animation(opacity 600ms ease-in 6.6s forwards);
-    }
-    
-    .s6 {
-        @include animation(opacity 600ms ease-in 7.2s forwards);
-    }
-    
-    .s3 {
-        @include animation(opacity 600ms ease-in 7.5s forwards);
-    }
-    .s2 {
-        @include animation(opacity 600ms ease-in-out 8.2s forwards);
-    }
-    
-    .an3 {
-          opacity: 0;
-        @include animation(an3 0.9s ease-in-out 8s forwards);
-      
-    }
-    
-    // .an4 {
-    //     @include animation(an4 0.9s ease-in 8.2s forwards);
-    // }
-    
-    // animation: name duration timing-function delay iteration-count direction fill-mode play-state;
-    @include keyframes (an3) {
-        0% {
-            opacity: 1;
-            @include transform(translateX(-500px));
-        }
-        100% {
-            opacity: 1;
-            @include transform(translateX(0px));
-        }
-    }
+//animation scss
+.cont-text {
+    @include animation(cont-animation 1.2s ease-in-out 0s forwards);
+}
 
-    // @include keyframes (an4) {
-    //     0% {
-    //         @include transform(translateX(-500px));
-    //     }
-    //     100% {
-    //         @include transform(translateX(0px));
-    //     }
-    // }
+.cloud {
+    @include animation(cloud 1s ease-in-out 0s forwards);
+}
+
+.t1 {
+    @include animation(opacity-text 2s ease-in-out 1s forwards);
+}
+
+.t2 {
+    @include animation(opacity 2s ease-in-out 2.8s forwards);
+}
+
+.logo {
+    @include animation(opacity 500ms ease-in-out 1.2s forwards);
+}
+
+.cont-inside {
+    @include animation(cont-inside 1.5s ease-in-out 4.2s forwards);
+}
+
+.t3 {
+    @include animation(opacity 2s ease-in-out 5.4s forwards);
+}
+
+.t3_btn {
+    @include animation(opacity 800ms ease-in-out 5.5s forwards);
+}
+
+.t3_2 {
+    @include animation(opacity 2s ease-in-out 6s forwards);
+}
+
+.logo2 {
+    @include animation(opacity 800ms ease-in-out 6.2s forwards);
+}
+
+@include keyframes (cloud) {
+    0% {
+        @include transform(translateY(-100%));
+    }
+    100% {
+        @include transform(translateY(0%));
+    }
+}
+
+@include keyframes (cont-animation) {
+    0% {
+        @include transform(translateY(0px));
+    }
+    100% {
+        @include transform(translateY(100%));
+    }
+}
+
+@include keyframes (bg-text2) {
+    0% {
+        @include transform(translateY(0px));
+    }
+    100% {
+        @include transform(translateY(-250px));
+    }
+}
+
+@include keyframes (cont-inside) {
+    0% {
+        @include transform(translateY(0px));
+    }
+    100% {
+        @include transform(translateY(-100%));
+    }
+}
+
+@include keyframes (opacity) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes (opacity-text) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.first-frame,
+.second-frame {
+    // background: #fff;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.second-frame {
+    opacity: 0;
+}
+
+.bg-1 {
+    position: absolute;
+    // right: -200px;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+    width: 118%;
+}
+
+.bg-2 {
+    position: absolute;
+    right: 156px;
+    bottom: 8px;
+    opacity: 0;
+    z-index: 9;
+}
+
+.bg-3 {
+    position: absolute;
+    left: -146px;
+}
+
+.bg-4 {
+    position: absolute;
+    right: 204px;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.bg-5 {
+    position: absolute;
+    top: 28px;
+    left: 22px;
+    opacity: 0;
+}
+
+.bg-6 {
+    position: absolute;
+    top: 28px;
+    left: 22px;
+    opacity: 0;
+}
+
+.curve {
+    position: absolute;
+    left: -100px;
+    // opacity: 0;
+}
+
+//bgp1
+@include keyframes (an1) {
+    0% {
+        @include transform(translateX(0px));
+    }
+    100% {
+        @include transform(translateX(550px));
+    }
+}
+
+.an1 {
+    @include animation(an1 1.4s ease-in-out 0.2s forwards);
+}
+
+//bg2 animation done
+.bg-2 {
+    @include animation(opacity 600ms ease-in-out 1.2s forwards);
+}
+
+.bg-4 {
+    @include animation(opacity 50ms ease-in-out 1.2s forwards);
+}
+
+.bg-6 {
+    @include animation(opacity 2s ease-in-out 3.5s forwards);
+}
+
+.bg-5 {
+    @include animation(opacity-text 2s ease-in-out 1.9s forwards);
+}
+
+// bg3
+@include keyframes (an2) {
+    0% {
+        @include transform(translateX(0px));
+    }
+    100% {
+        @include transform(translateX(300px));
+    }
+}
+
+.an2 {
+    @include animation(an2 0.9s ease-in-out 0.6s forwards);
+}
+
+.first-frame {
+    @include animation(first-ani 600ms ease-in 5.5s forwards);
+}
+
+.second-frame {
+    @include animation(opacity 600ms ease-in 5.8s forwards);
+}
+
+@include keyframes (first-ani) {
+    0% {
+        @include transform(translateX(0px));
+    }
+    100% {
+        @include transform(translateX(100%));
+    }
+}
+
+.s1 {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.s2 {
+    position: absolute;
+    right: 217px;
+    z-index: 99;
+    opacity: 0;
+    top: 0;
+}
+
+.s3 {
+    position: absolute;
+    right: -68px;
+    z-index: 99;
+    width: 300px;
+    bottom: 10px;
+    opacity: 0;
+}
+
+.s4 {
+    position: absolute;
+    right: 245px;
+    z-index: 99;
+    width: 30%;
+    top: 30px;
+    opacity: 0;
+}
+
+.s5 {
+    position: absolute;
+    left: -55px;
+    z-index: 99;
+    width: 450px;
+    top: 15px;
+}
+
+.s6 {
+    position: absolute;
+    right: 185px;
+    bottom: 10px;
+    z-index: 99;
+    opacity: 0;
+}
+
+.s5 {
+    @include animation(opacity 600ms ease-in 6.0s forwards);
+}
+
+.s4 {
+    @include animation(opacity 600ms ease-in 6.7s forwards);
+}
+
+.s6 {
+    @include animation(opacity 600ms ease-in 7.8s forwards);
+}
+
+.s3 {
+    @include animation(opacity 600ms ease-in 8.2s forwards);
+}
+
+.s2 {
+    @include animation(opacity 600ms ease-in-out 6.1s forwards);
+}
+
+.an3 {
+    opacity: 0;
+    @include animation(an3 0.9s ease-in 5.3s forwards);
+}
+
+@include keyframes (an3) {
+    0% {
+        opacity: 0;
+        @include transform(translateX(-500px));
+    }
+    100% {
+        opacity: 1;
+        @include transform(translateX(0px));
+    }
+}
