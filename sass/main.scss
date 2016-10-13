@@ -177,9 +177,9 @@
 .bg-1 {
     position: absolute;
     // right: -200px;
-      right: 5px;
+      right: 0px;
     z-index: 9;
-    width: 116%;
+    width: 118%;
 }
 .bg-2 {
     position: absolute;
@@ -195,7 +195,8 @@
 }
 .bg-4 {
     position: absolute;
-    right: 194px;
+    right: 204px;
+
     z-index: 9;
     opacity: 0;
 }
