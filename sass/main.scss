@@ -225,7 +225,7 @@
 }
 
 .bg-2 {
-    position: absolute;
+    position: fixed;
     height: 40px;
     right: 156px;
     bottom: 8px;
@@ -296,7 +296,7 @@
 }
 
 .bg-4 {
-    right: 202px;
+    // right: 202px;
     @include animation(slide-trans 1.4s ease-in-out 0.2s forwards);
 }
 
